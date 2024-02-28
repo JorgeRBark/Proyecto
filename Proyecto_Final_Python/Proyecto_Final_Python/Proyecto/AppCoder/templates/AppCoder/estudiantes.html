@@ -1,0 +1,15 @@
+{% extends "AppCoder/base.html" %}
+{% load static %}
+
+
+{% block contenidoquecambia %}
+<form action = "" method="POST">
+    {% csrf_token %}
+    <table>
+        {{formestudiantes.as_table}}
+    <table>
+    <input type="submit" value="Guardar">
+</form>
+
+
+{% endblock contenidoquecambia %}
